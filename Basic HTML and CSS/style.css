@@ -1,0 +1,236 @@
+body{
+    font-family: 'Roboto', sans-serif;    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+} /*Setting the format of the page*/
+h1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: grid;
+}
+h2{
+    margin-bottom: 0%;
+    margin-top: 1%;
+    display: grid;
+}
+.header {/*Sticking the header div to the top and setting the background color*/
+    padding: 1px;
+    text-align: center;
+    background: aqua;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+/*Using Flex to horizontally list the unordered list and center it. Used https://codepen.io/derekshirk/pen/QbxxaZ for reference*/ 
+.list_container{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: row;
+} 
+.list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.list li{
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+} /*Setting the unordered list in horizontal format*/
+
+.details{ /*Setting the margins for dropdown*/
+    margin-top: 0%;
+    padding:0 ;
+    margin-bottom: 2%;
+}
+/*Formatting the table*/
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto; /*https://www.w3schools.com/howto/howto_css_table_center.asp*/
+    margin-right: auto;/*https://www.w3schools.com/howto/howto_css_table_center.asp*/
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+}
+th{/*Formatting the table headers*/
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: orange;
+    text-align: center;
+}
+tr{/*Formatting the table rows*/
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+/*Creating Grid - all information from https://www.w3schools.com/css/css_grid_container.asp*/
+.grid-container{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr minmax(560px,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/minmax*/
+    width:100%; /*https://stackoverflow.com/questions/43747185/force-css-grid-container-to-fill-full-screen-of-device*/
+    height: 80%;
+}
+.right{
+    display: grid;
+    background-color: plum;
+    padding: 0%;
+    margin: 0%;
+}
+.left{
+    display: grid;
+    grid-template-rows: auto;
+    overflow-x: scroll;
+    padding: 0%;
+    margin: 0%;
+    min-width: 0%;
+}
+.video{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+/*Displaying form as a grid to split into 2 columns and 2 rows*/   
+.form{ /*https://www.quackit.com/html/html_editors/scratchpad/?example=/css/grid/examples/forms_explicitly_placed_example_2*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 18% 18%;
+    grid-row-gap: 10%;
+}
+.feedback_item{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: -5%;
+}
+.email_item{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+.country_item{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.attachments_item{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/*FORMATTING THE FORM FIELD LABELS AND INPUTS BY CREATING A GRID WITHIN THE GRID*/
+
+/*Grids to format the feedback field*/
+.feed{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+.feed label{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.feed input{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+/*Grids to format the email label and input*/
+.email_input{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.email_input label{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: -30%;
+}
+.email_input input{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-right: 4%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+
+}
+/*Grids to format the country label and input*/
+.country_input{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.country_input label{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 0%;
+    margin-top: 5%;
+
+}
+.country_input input{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 10%;
+
+}
+/*Grids to format the attachments label and input*/
+.attachments_input{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.attachments_input label{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.attachments_input input{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-top: 0%;
+}
+/*Grid span to format the acknowledgement field*/
+.acknowledges{
+    display: grid;
+    grid-column-end: span 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5%;
+    margin-bottom: -0.75%;
+}
+/*Grid span to format submit button*/
+.submit-form{
+    display: grid;
+    grid-column-end: span 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: -6%;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>CSC309 Personal Website</title>
+    </head>
+    <body>
+        <div class = "header">Hello Visitors</div>
+        <!-- Creating the grid -->
+        <div class = "grid-container"> <!--Parent grid class-->
+            <div class = "left"><!--Left column class-->
+                <div class = "item"><h1>Shiza Khanani</h1></div>
+                <div class = "item"><h2>khanan19</h2></div>
+                <div class = "list_container"> <!--Flex container to horizontally list the ul with bullet points-->
+                    <ul class = "list">
+                        <li>A1 is worth 10%</li>
+                        <li>A2 is worth 20%</li>
+                        <li>A3 is worth 15%</li>
+                    </ul>
+                </div>
+                <div class = "item">
+                    <details class = "details">
+                        <summary>Fact</summary>
+                        I'm <b>a</b> <del>robot</del> <mark>human</mark> 
+                    </details>
+                </div>
+                <div class = "progress-item"> <!--Grid item-->
+                    <label for="progress"> <span title="Programming on the web">CSC309</span> progress so far</label> 
+                    <progress id ="progress" value = "1" max ="12">8.3%</progress>
+                </div>
+                <div class = "item">
+                    <table><!--Creating the table-->
+                        <tr>
+                            <th>Course</th>
+                            <th>Year</th>
+                            <th>Semester</th>
+                            <th>Assignments</th>
+                        </tr>
+                        <tr>
+                            <td>CSC309</td>
+                            <td>2023</td>
+                            <td>Winter</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>CSC309</td>
+                            <td>2022</td>
+                            <td>Summer</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </table>
+                </div>
+                <form class ="form" action="https://ibs.utm.utoronto.ca/csc309/a1/submit" method="post">
+                    <div class = "feedback_item"> <!--Grid item for feedback-->
+                        <div class="feed">
+                            <label for="feedback">Feedback</label>
+                            <textarea id="feedback" name="feedback" placeholder = "Enter your feedback here" required></textarea>
+                        </div>
+                    </div><!--End of feedback item-->
+                    <div class = "email_item"><!--Grid item for email-->
+                        <div class="email_input">
+                            <label for ="email">Email</label> <!--https://css-tricks.com/html-inputs-and-labels-a-love-story/-->
+                            <input type="email" id="email" name="email" required>
+                        </div>    
+                    </div><!--End of email item-->
+                    <div class = "country_item"><!--Grid item for country-->
+                        <div class="country_input">
+                            <label for="country">Country</label>
+                            <select id="country" name ="country" required>
+                                <option value="" >----</option>
+                                <option value="Canada">Canada</option>
+                                <option value="United States">United States</option>
+                                </select>
+                        </div>
+                    </div><!--End of country item-->
+                    <div class = "attachments_item"> <!--Grid item for attachment-->
+                        <div class = "attachments_input">
+                            <label for="attachments">Attachment</label>
+                            <input type="file" id="attachments" name="attachments" required>
+                        </div>
+                    </div>
+                    <div class = "acknowledges"><!--Grid item for acknowledges-->
+                        <div class = "acknowledges_input">
+                            <input type="checkbox" id="acknowledge" name="acknowledge" value="yes" required>
+                            <label for="acknowledge">I agree to the terms and conditions</label>
+                        </div>
+                    </div><br><!--End of acknowledges item-->
+                    <div class = "submit-form"><input type="submit" formenctype="multipart/form-data" value="Send Feedback"></div> 
+                </form>
+            </div><!--End of LEFT column-->
+            <div class = "right"><!--Right column class-->
+                <div class ="video"> <!--Insert video-->
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9hh8qaajIXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>    
+            </div><!--End of RIGHT column-->
+        </div> 
+        <div class="footer"><!--Div class to format and center footer-->
+            <footer class = "footer">
+                <a href="mailto:shiza.khanani@mail.utoronto.ca?subject=Bug%20Found!&body=I%20found%20the%20following%20bug%20on%20your%20website">shiza.khanani@mail.utoronto.ca</a>
+            </footer>
+        </div> 
+    </body>
+</html>
