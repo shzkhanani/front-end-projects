@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="button-color">
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="resources/logo.png"
+          />
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-yellow-800"
+          >
+            Easy Chef: A recipe sharing web application
+          </h1>
+          <p class="mb-8 leading-relaxed text-black">
+            With Easy Chef, you can search through millions of different recipes
+            from various diets and ingredients from all over the world! You can
+            also share your custom recipe with everyone! You don't need to worry
+            about the shopping list either; Easy Chef takes care of that as
+            well!
+          </p>
+          <div class="flex justify-center">
+            <a href="sign-in.html">
+              <div
+                class="button w-40 h-16 bg-white cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#FFFFFF,0_0px_0_0_#1b70f841] active:border-b-[0px] transition-all duration-150 [box-shadow:0_10px_0_0_#1b70f841,0_15px_0_0_#1b70f841] rounded-full border-[1px] border-white"
+              >
+                <span
+                  class="flex flex-col justify-center items-center h-full text-black font-bold text-lg"
+                  >Sign in</span
+                >
+              </div>
+            </a>
+            <a href="sign-up.html">
+              <div
+                class="button w-40 h-16 bg-white cursor-pointer select-none active:translate-y-2 active:[box-shadow:0_0px_0_0_#FFFFFF,0_0px_0_0_#1b70f841] active:border-b-[0px] ml-8 transition-all duration-150 [box-shadow:0_10px_0_0_#1b70f841,0_15px_0_0_#1b70f841] rounded-full border-[1px] border-white"
+              >
+                <span
+                  class="flex flex-col justify-center items-center h-full text-black font-bold text-lg"
+                  >Sign up</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer class="w-screen fixed bottom-0" id="footer">
+    <div class="container flex justify-center py-5 mx-auto">
+      <div class="lg:w-1/3">
+        <div class="flex flex-row justify-center"></div>
+      </div>
+    </div>
+  </footer>
+</html>
