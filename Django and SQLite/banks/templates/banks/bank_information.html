@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <h1>{{bank.name}}</h1>
+   <div><span>{{bank.description}}</span></div></br>
+   <div><span>Swift code : {{bank.swift_code}}</span></div>
+   <div><span>Inst number : {{bank.inst_num}}</span> </div>
+   <div>
+       <span>Branches</span>
+        {%if branches%}
+          <table>
+              <tr>
+                <td>name</td>
+                <td>transit number</td>
+                <td>address</td>
+              </tr>
+              {%for branch in branches %}
+                <td>{{branch.name}}</td>
+                <td>{{branch.transit_num}}</td>
+                <td>{{branch.address}}</td>
+              {% endfor %}
+          </table>
+        {% else %}
+            <span>No branch found</span>
+        {% endif %}
+   </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <style>
+        form {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-row-gap: 20px;
+            grid-column-gap: 10px;
+            font-family: "Times New Roman";
+        }
+
+        label {
+            text-align: right;
+            padding-top: 4px;
+        }
+
+        input {
+            border: 1px solid black;
+            height: 20px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        form div.title {
+            grid-column: 1 / 3;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        form button {
+            grid-column: 1 / 3;
+            width: 80px;
+            height: 30px;
+            background: gray;
+            font-size: 16px;
+            margin: auto;
+            color: white;
+            border: none;
+        }
+
+    </style>
+    <form method="POST" action="/banks/branch/{{branch}}/edit/">
+        <div class="title" > Edit Branch </div>
+        <label for="name"> name </label>
+        <div>
+            {%if form.errors.name%}
+                <h5 style="color: red">{{form.errors.name}}</h5>
+            {%endif%}
+            <input type="text" id="name" name="name" value = "{{form.initial.name}}"><br>
+        </div>
+        <label for="transit_num"> transit_num</label>
+        <div>
+            {%if form.errors.transit_num%}
+                <h5 style="color: red">{{form.errors.transit_num}}</h5>
+            {%endif%}
+            <input type="text" id="transit_num" name="transit_num" value = "{{form.initial.transit_num}}"><br>
+        </div>
+        <label for="address"> address </label>
+        <div>
+            {%if form.errors.address%}
+                <h5 style="color: red">{{form.errors.address}}</h5>
+            {%endif%}
+            <input type="text" id="address" name="address" value = "{{form.initial.address}}"><br>
+        </div>
+        <label for="email"> email </label>
+        <div>
+            {%if form.errors.email%}
+                <h5 style="color: red">{{form.errors.email}}</h5>
+             {%endif%}
+            <input type="email" id="email" name="email" >
+        </div>
+        <label for="capacity"> capacity </label>
+        <div>
+            {%if form.errors.capacity%}
+                <h5 style="color: red">{{form.errors.capacity}}</h5>
+             {%endif%}
+            <input type="number" id="capacity" name="capacity" ><br>
+        </div>
+        <button type="submit" > Save  </button>
+    </form>
+</body>
+</html>
