@@ -21,7 +21,7 @@ header {
     justify-content: space-between; 
     align-items: center;
     width: 90%;
-    margin: 0 auto; /* Centers the container */
+    margin: 0 auto; 
 }
 
 /* Main Navigation */
@@ -36,7 +36,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    margin: 0; /* Prevents pushing everything right */
+    margin: 0; 
 }
 
 nav ul li a {
@@ -99,7 +99,7 @@ nav ul li a:hover {
     margin-right: 10px;
 }
 
-
+/* 2nd Nav bar + Sign in button*/
 .hero {
     display: flex;
     justify-content: space-evenly;
@@ -108,7 +108,7 @@ nav ul li a:hover {
     margin-left: 175px;
 }
 
-/* Logo Styling */
+
 .logo img {
     height:  120px;  
     width: auto;
@@ -149,7 +149,7 @@ nav ul li a:hover {
 .sign-in {
     padding: 20px 36px;
     font-size: 14px;
-    border-radius: 50px; /* Fixed oval shape */
+    border-radius: 50px; 
     background-color: blue;
     color: white;
     border: none;
@@ -161,7 +161,7 @@ nav ul li a:hover {
     background-color: black;
 }
 
-/* Dropdown */
+/* Sign in Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -212,7 +212,7 @@ nav ul li a:hover {
 }
 
 .text-content h1 {
-    font-size: 40px; /* Adjust heading size */
+    font-size: 40px; 
     font-weight: bold;
 }
 .text-content h2 {
@@ -233,7 +233,7 @@ nav ul li a:hover {
     padding: 20px 36px;
     margin-top: 30px;
     font-size: 14px;
-    border-radius: 50px; /* Fixed oval shape */
+    border-radius: 50px; 
     background-color: white;
     color: navy;
     border-color: navy;
