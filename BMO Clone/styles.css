@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 3px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 90%;
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Main Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0; /* Prevents pushing everything right */
+}
+
+nav ul li a {
+    color: #747373;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(53, 53, 251);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 15px;
+}
+
+/* Right-side navigation (Search, Country, Language) */
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-container .search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar {
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+}
+
+.search-container:hover .search-bar {
+    width: 200px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 175px;
+}
+
+/* Logo Styling */
+.logo img {
+    height:  120px;  
+    width: auto;
+    margin-top: 0;  
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.nav-left ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-left ul li a {
+    color: #747373;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-left ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(53, 53, 251);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 15px;
+}
+
+/* Sign-in Button */
+.sign-in {
+    padding: 20px 36px;
+    font-size: 14px;
+    border-radius: 50px; /* Fixed oval shape */
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 130px;
+}
+
+.sign-in:hover {
+    background-color: black;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    margin-left: 130px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .drop-down {
+    display: block;
+}
+
+.main {
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    max-width: 80%;  
+    margin: 0 auto;  
+    gap: 20px;
+}
+
+.text-content {
+    max-width: 50%;  
+    font-size: 20px;  
+    text-align: left;  
+    margin-left: 50px;
+}
+
+.text-content h1 {
+    font-size: 40px; /* Adjust heading size */
+    font-weight: bold;
+}
+.text-content h2 {
+    font-size: 14px;
+    padding-top: 20px;
+    color: grey;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.image-content img {
+    width: 600px;  
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.learn {
+    padding: 20px 36px;
+    margin-top: 30px;
+    font-size: 14px;
+    border-radius: 50px; /* Fixed oval shape */
+    background-color: white;
+    color: navy;
+    border-color: navy;
+    cursor: pointer;
+}
+
+.learn:hover {
+    background-color: rgb(212, 232, 240);
+}
+
+.personal-banking h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6c757d;  
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+
+.personal-banking h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;  
+    text-align: center;
+    margin-bottom: 16px;
+}
