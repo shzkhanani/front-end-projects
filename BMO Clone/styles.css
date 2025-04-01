@@ -150,7 +150,7 @@ nav ul li a:hover {
     padding: 20px 36px;
     font-size: 14px;
     border-radius: 50px; 
-    background-color: blue;
+    background-color: #0078C1;
     color: white;
     border: none;
     cursor: pointer;
@@ -235,8 +235,8 @@ nav ul li a:hover {
     font-size: 14px;
     border-radius: 50px; 
     background-color: white;
-    color: navy;
-    border-color: navy;
+    color:#0078C1;
+    border-color: #0078C1;
     cursor: pointer;
 }
 
