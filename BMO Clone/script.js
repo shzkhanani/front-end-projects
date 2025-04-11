@@ -1,24 +1,16 @@
-// script.js
-
-// Function to initialize event listeners
 function init() {
-    // Add click event listener to the search icon if the search icon exists
-    const searchIcon = document.getElementById('search-icon'); //Get the search icon by ID
-    if (searchIcon) {
-      searchIcon.addEventListener('mouseenter', toggleSearchBar); //Run below fcn when search icon is hovered over
-    }
+  const searchIcon = document.getElementById('search-icon'); // Get the search icon by ID
+  if (searchIcon) {
+      searchIcon.addEventListener('mouseenter', toggleSearchBar); // When hovered over, run the function
   }
-  
-  // Function to toggle the search bar visibility
-  function toggleSearchBar() {
-    const searchContainer = document.querySelector('.search-container');//Looks for the search-container
-    const searchInput = document.getElementById('search');//The input field
-    if (searchContainer) { //Search box exists
-      searchContainer.classList.toggle('active');
-      if (searchContainer.classList.contains('active')) {
-        searchInput.focus();
-      } else { //Search box doesnt exist 
-        searchInput.blur();
-      }
-    }
+}
+
+function toggleSearchBar() {
+  const searchContainer = document.querySelector('.search-container'); // Get the container
+  if (searchContainer) {
+      searchContainer.classList.toggle('active'); // Toggle the 'active' class
   }
+}
+
+// Initialize the event listener when the DOM content is loaded
+window.addEventListener('DOMContentLoaded', init);
